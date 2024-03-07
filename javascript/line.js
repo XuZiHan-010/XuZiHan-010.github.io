@@ -118,7 +118,7 @@ $.get(jsonDataPath, function (_rawData) {
       bottom: '15%',
       top:'10%',
       width: 'auto',
-      height: 'auto',
+      height: '80%',
       containLabel: true // This option ensures that the labels are contained within the grid
   },
   
