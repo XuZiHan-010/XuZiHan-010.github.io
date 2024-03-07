@@ -115,7 +115,7 @@ $.get(jsonDataPath, function (_rawData) {
      grid: {
       left: '5%', 
       right: '20%',
-      bottom: '15%',
+      bottom: '20%',
       top:'10%',
       width: 'auto',
       height: '80%',
