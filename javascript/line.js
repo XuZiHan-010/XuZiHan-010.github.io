@@ -112,7 +112,7 @@ $.get(jsonDataPath, function (_rawData) {
             fontWeight: 'bold'
         }
     },
-    grid: {
+     grid: {
       left: '5%', 
       right: '20%',
       bottom: '5%',
