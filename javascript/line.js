@@ -112,12 +112,12 @@ $.get(jsonDataPath, function (_rawData) {
             fontWeight: 'bold'
         }
     },
-    grid: {
+     grid: {
       left: '5%', 
-      right: '10%',
+      right: '13%',
       bottom: '5%',
       top:'10%',
-      width: '85%',
+      width: '80%',
       height: '90%',
       containLabel: true // This option ensures that the labels are contained within the grid
   },
