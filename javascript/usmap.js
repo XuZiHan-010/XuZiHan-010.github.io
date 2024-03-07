@@ -3,6 +3,11 @@
   var myChart = echarts.init(document.getElementById('usmap'));
 
 
+
+
+  
+
+
 myChart.showLoading();
 
 // Load the geojson of the USA
@@ -17,9 +22,6 @@ $.get('../data/USA.json', function (usaJson) {
 
 
 
-  window.addEventListener('resize', function () {
-     mychart.resize();
-  });
 
 
 
@@ -74,11 +76,7 @@ $.get('../data/USA.json', function (usaJson) {
         ]
         
       };
-// Media query adjustments for responsiveness
-if (window.innerWidth <= 500) {
-  option.series[0].emphasis.label.show = false; // Hide labels to prevent overlap
-  // Other adjustments can be done here as per requirements
-}
+
 
       // Set the loaded option
       myChart.setOption(option);
