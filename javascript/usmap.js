@@ -15,6 +15,14 @@ $.get('../data/USA.json', function (usaJson) {
     'Puerto Rico': { left: -76, top: 26, width: 2 }
   });
 
+
+
+  window.addEventListener('resize', function () {
+     mychart.resize();
+  });
+
+
+
   // Fetch the converted json file for the population data from census 2020
   fetch('../data/uscensus_data.json') 
     .then(response => response.json())
@@ -64,7 +72,13 @@ $.get('../data/USA.json', function (usaJson) {
             data: data // Use the loaded census data for the series data
           }
         ]
+        
       };
+// Media query adjustments for responsiveness
+if (window.innerWidth <= 500) {
+  option.series[0].emphasis.label.show = false; // Hide labels to prevent overlap
+  // Other adjustments can be done here as per requirements
+}
 
       // Set the loaded option
       myChart.setOption(option);

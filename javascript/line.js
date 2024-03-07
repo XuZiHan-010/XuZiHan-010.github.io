@@ -114,11 +114,11 @@ $.get(jsonDataPath, function (_rawData) {
     },
     grid: {
       left: '5%', 
-      right: '10%',
+      right: '20%',
       bottom: '5%',
       top:'10%',
-      width: '85%',
-      height: '90%',
+      width: 'auto',
+      height: 'auto',
       containLabel: true // This option ensures that the labels are contained within the grid
   },
   

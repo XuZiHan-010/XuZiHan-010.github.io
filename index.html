@@ -39,7 +39,7 @@
   font-size: 0.3rem;
 }
 /*layout for the chart content and make it stay in the center*/
-#myTabContent {
+ #myTabContent {
     display: flex;     
     align-items: center; 
     text-align: center; 
@@ -51,14 +51,13 @@
   padding: 0.2rem 0.4rem;
   font-size: 0.2rem; 
   margin-right:0;
-}
-
+} 
 /* Style for the tooltip */
 .tooltip-inner {
   writing-mode: horizontal-tb;
   transform: none;
   font-size: 0.2rem;
-}
+} 
 
 /*change the arrow color */
 .bs-tooltip-top .arrow::before, .bs-tooltip-auto[x-placement^="top"] .arrow::before {
@@ -78,6 +77,9 @@ min-width: .5rem;
 .dropdown-menu .dropdown-item {
   padding: 0.25rem 1rem; 
 }
+
+
+/*color for the icons design*/
 .icon-plane{
   color:palevioletred;
 }
@@ -101,7 +103,13 @@ color:red;
 .icon-clock{
   color:purple;
 }
- 
+
+
+
+
+
+
+
     #chartContainer {width: 12rem; margin: auto; margin-top: 0.5rem; }
     #chartContainer p {margin-left: 20px; margin-bottom: 5px; margin-top: 0; padding: 0;}
  
@@ -220,7 +228,7 @@ color:red;
       </p>
       <!-- Container for population line race in westhern regions -->
       <div id="westgrowth" style="width: 15rem; height: 7rem;"></div>
-      <div style="float:right">  <button type="button" id='replaywest' class="btn btn-secondary btn-sm"
+      <div style="float:center">  <button type="button" id='replaywest' class="btn btn-secondary btn-sm"
         data-bs-toggle="tooltip" data-bs-placement="top" 
         title="Click the button to play the animation.">
         Play Animation
@@ -320,6 +328,12 @@ color:red;
     $(document).ready(function(){
     $('[data-bs-toggle="tooltip"]').tooltip();
   });
+
+
+
+
+
+
     </script>
 </body>
 </html>
